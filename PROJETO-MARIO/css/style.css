@@ -1,0 +1,158 @@
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+li, ul, a{
+    display: inline;
+    list-style: none;
+    
+}
+
+.fundo-video{
+    background-color: #d5011d;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.fundo-video .video{
+    color: rgba(0, 0, 0, 0.507);
+    background-color: rgba(0, 0, 0);
+    position: fixed;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.fundo-video::after{
+    content:"";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8533788515406162) 50%, rgba(0,0,0,1) 100%);
+}
+
+.header{
+  display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+
+}
+.header .logo{
+    width: 65px;
+    
+}
+.header .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+.header .menu ul li a{
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 0.2s;
+}
+
+.header .menu ul li a:hover{
+    background-color: #d5011d;
+    color: #ffff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 145px);
+   align-self: center;
+   align-items: center;
+   justify-content: space-between;
+   padding: 40px 80px;
+    
+}
+
+.super-mario-bros{
+    max-width: 500px;
+}
+
+.container  .descricao{
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0 ;
+}
+
+.container .btn{
+    background-color: #d5011d;
+    color: #ffff;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition:  0.5s all ease-in-out;
+}
+
+.container .btn:hover{
+    background-color: #d5011d;
+    color: #ffff;
+    transform: scale(1.2) ;
+    
+}
+
+.personagens-img{
+    max-width: 400px;
+
+}
+
+.modall{
+    background-color: rgba(52, 52, 50, 0.749);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    
+}
+
+.conteudo-modal{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 15px;
+}
+
+.modall.aberto{
+    opacity: 1;
+    visibility: visible;
+}
+.fechar-modal{
+    background-color: #ffff;
+    color: #d5011d;
+    width: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
